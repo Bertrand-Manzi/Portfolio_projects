@@ -233,18 +233,18 @@ From Year_data
 --------------------------------> Explore table for Nulls <-----------------------------------------------
 
 SELECT
-    SUM(CASE WHEN ride_id LIKE 'NULL' THEN 1 ELSE 0 END) AS ride_id_null,
-    SUM(CASE WHEN rideable_type LIKE 'NULL' THEN 1 ELSE 0 END) AS rideable_type_null,
-    SUM(CASE WHEN started_at LIKE 'NULL' THEN 1 ELSE 0 END) AS started_at_null,
-    SUM(CASE WHEN ended_at LIKE 'NULL' THEN 1 ELSE 0 END) AS ended_at_null,
-    SUM(CASE WHEN start_station_name LIKE 'NULL' THEN 1 ELSE 0 END) AS start_station_null,
-    SUM(CASE WHEN end_station_name LIKE 'NULL' THEN 1 ELSE 0 END) AS end_station_null,
-    SUM(CASE WHEN member_casual LIKE 'NULL' THEN 1 ELSE 0 END) AS member_casual_null,
-    SUM(CASE WHEN start_lat IS NULL THEN 1 ELSE 0 END) AS start_lat_null,
-	SUM(CASE WHEN start_lng IS NULL THEN 1 ELSE 0 END) AS start_lng_null,
-	SUM(CASE WHEN end_lng IS NULL THEN 1 ELSE 0 END) AS end_lng_null,
-	SUM(CASE WHEN end_lat IS NULL THEN 1 ELSE 0 END) AS end_lat_null
-FROM  Year_data
+Â Â Â Â SUM(CASEÂ WHENÂ ride_idÂ LIKEÂ 'NULL'Â THENÂ 1Â ELSEÂ 0Â END)Â ASÂ ride_id_null,
+Â Â Â Â SUM(CASEÂ WHENÂ rideable_typeÂ LIKEÂ 'NULL'Â THENÂ 1Â ELSEÂ 0Â END)Â ASÂ rideable_type_null,
+Â Â Â Â SUM(CASEÂ WHENÂ started_atÂ LIKEÂ 'NULL'Â THENÂ 1Â ELSEÂ 0Â END)Â ASÂ started_at_null,
+Â Â Â Â SUM(CASEÂ WHENÂ ended_atÂ LIKEÂ 'NULL'Â THENÂ 1Â ELSEÂ 0Â END)Â ASÂ ended_at_null,
+Â Â Â Â SUM(CASEÂ WHENÂ start_station_nameÂ LIKEÂ 'NULL'Â THENÂ 1Â ELSEÂ 0Â END)Â ASÂ start_station_null,
+Â Â Â Â SUM(CASEÂ WHENÂ end_station_nameÂ LIKEÂ 'NULL'Â THENÂ 1Â ELSEÂ 0Â END)Â ASÂ end_station_null,
+Â Â Â Â SUM(CASEÂ WHENÂ member_casualÂ LIKEÂ 'NULL'Â THENÂ 1Â ELSEÂ 0Â END)Â ASÂ member_casual_null,
+    SUM(CASEÂ WHENÂ start_latÂ ISÂ NULLÂ THENÂ 1Â ELSEÂ 0Â END)Â ASÂ start_lat_null,
+	SUM(CASEÂ WHENÂ start_lngÂ ISÂ NULLÂ THENÂ 1Â ELSEÂ 0Â END)Â ASÂ start_lng_null,
+	SUM(CASEÂ WHENÂ end_lngÂ ISÂ NULLÂ THENÂ 1Â ELSEÂ 0Â END)Â ASÂ end_lng_null,
+	SUM(CASEÂ WHENÂ end_latÂ ISÂ NULLÂ THENÂ 1Â ELSEÂ 0Â END)Â ASÂ end_lat_null
+FROMÂ Â Year_data
 
 --------------------------------> Final Cleaned Table; Two new columns added and cleanedof Nulls <-----------------------------------------------
 
@@ -303,18 +303,18 @@ from Year_data_cleaned
 --------------------------------> Cross checking if all Nulls removed <-----------------------------------------------
 
 SELECT
-    SUM(CASE WHEN ride_id LIKE 'NULL' THEN 1 ELSE 0 END) AS ride_id_null,
-    SUM(CASE WHEN rideable_type LIKE 'NULL' THEN 1 ELSE 0 END) AS rideable_type_null,
-    SUM(CASE WHEN started_at LIKE 'NULL' THEN 1 ELSE 0 END) AS started_at_null,
-    SUM(CASE WHEN ended_at LIKE 'NULL' THEN 1 ELSE 0 END) AS ended_at_null,
-    SUM(CASE WHEN start_station_name LIKE 'NULL' THEN 1 ELSE 0 END) AS start_station_null,
-    SUM(CASE WHEN end_station_name LIKE 'NULL' THEN 1 ELSE 0 END) AS end_station_null,
-    SUM(CASE WHEN member_casual LIKE 'NULL' THEN 1 ELSE 0 END) AS member_casual_null,
-    SUM(CASE WHEN start_lat IS NULL THEN 1 ELSE 0 END) AS start_lat_null,
-	SUM(CASE WHEN start_lng IS NULL THEN 1 ELSE 0 END) AS start_lng_null,
-	SUM(CASE WHEN end_lng IS NULL THEN 1 ELSE 0 END) AS end_lng_null,
-	SUM(CASE WHEN end_lat IS NULL THEN 1 ELSE 0 END) AS end_lat_null
-FROM  Year_data_cleaned
+Â Â Â Â SUM(CASEÂ WHENÂ ride_idÂ LIKEÂ 'NULL'Â THENÂ 1Â ELSEÂ 0Â END)Â ASÂ ride_id_null,
+Â Â Â Â SUM(CASEÂ WHENÂ rideable_typeÂ LIKEÂ 'NULL'Â THENÂ 1Â ELSEÂ 0Â END)Â ASÂ rideable_type_null,
+Â Â Â Â SUM(CASEÂ WHENÂ started_atÂ LIKEÂ 'NULL'Â THENÂ 1Â ELSEÂ 0Â END)Â ASÂ started_at_null,
+Â Â Â Â SUM(CASEÂ WHENÂ ended_atÂ LIKEÂ 'NULL'Â THENÂ 1Â ELSEÂ 0Â END)Â ASÂ ended_at_null,
+Â Â Â Â SUM(CASEÂ WHENÂ start_station_nameÂ LIKEÂ 'NULL'Â THENÂ 1Â ELSEÂ 0Â END)Â ASÂ start_station_null,
+Â Â Â Â SUM(CASEÂ WHENÂ end_station_nameÂ LIKEÂ 'NULL'Â THENÂ 1Â ELSEÂ 0Â END)Â ASÂ end_station_null,
+Â Â Â Â SUM(CASEÂ WHENÂ member_casualÂ LIKEÂ 'NULL'Â THENÂ 1Â ELSEÂ 0Â END)Â ASÂ member_casual_null,
+    SUM(CASEÂ WHENÂ start_latÂ ISÂ NULLÂ THENÂ 1Â ELSEÂ 0Â END)Â ASÂ start_lat_null,
+	SUM(CASEÂ WHENÂ start_lngÂ ISÂ NULLÂ THENÂ 1Â ELSEÂ 0Â END)Â ASÂ start_lng_null,
+	SUM(CASEÂ WHENÂ end_lngÂ ISÂ NULLÂ THENÂ 1Â ELSEÂ 0Â END)Â ASÂ end_lng_null,
+	SUM(CASEÂ WHENÂ end_latÂ ISÂ NULLÂ THENÂ 1Â ELSEÂ 0Â END)Â ASÂ end_lat_null
+FROMÂ Â Year_data_cleaned
 
 
 --------------------------------> DATA EXPLORATION FROM CLEANED TABLE <-------------------------------------------
@@ -375,6 +375,8 @@ From Year_data_cleaned
 Where member_casual = 'casual'
 Group by end_station_name, end_lat, end_lng
 Order by num_of_casuals_arriving DESC
+
+Tableau Visualisations; https://public.tableau.com/app/profile/bertrand.manzi/viz/Cyclisticbike-shareanalysis_16360559796750/Story1?publish=yes
 
 
 
